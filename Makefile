@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
 
 repo := amazon/aws-cli
-tags := amd64 arm64
+tags := amd64
 
 define build_git_branch
 	git checkout master
