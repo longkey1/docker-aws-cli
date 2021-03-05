@@ -1,4 +1,4 @@
-FROM amazon/aws-cli:latest
+FROM amazon/aws-cli:amd64
 
 # Fix frontend not set error
 ARG DEBIAN_FRONTEND=noninteractive
