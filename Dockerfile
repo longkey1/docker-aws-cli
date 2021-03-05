@@ -3,6 +3,9 @@ FROM amazon/aws-cli:latest
 # Fix frontend not set error
 ARG DEBIAN_FRONTEND=noninteractive
 
+# Install shadow-utils for useradd and groupmod
+RUN yum install -y shadow-utils
+
 # Install gosu
 ENV GOSU_VERSION=1.12
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 \
